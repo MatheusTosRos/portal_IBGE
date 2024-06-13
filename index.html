@@ -1,1 +1,86 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Portal de notícias do IBGE</h1>
+        <div id="pesquisa">
+            <input type="text" placeholder="  Buscar notícia por termo">
+            <button id="filtro">
+                <div>
+                    <svg width="20" height="20" fill="#f0f0f0" viewBox="0 0 80 90" focusable="false"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m 0,0 30,45 0,30 10,15 0,-45 30,-45 Z"></path>>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <dialog id="dialog">
+        <form method="dialog">
+            <section>
+                <p>
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo">
+                        <option></option>
+                        <option>Notícia</option>
+                        <option>Realise</option>
+                    </select>
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    <label for="quantidade">Quantidade:</label>
+                    <select id="quantidade">
+                        <option></option>
+                        <option>2</option>
+                        <option>5</option>
+                        <option>10</option>
+                    </select>
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    <label for="deData">De:</label>
+                    <input id="deData" type="date">
+                </p>
+            </section>
+
+            <section>
+                <p>
+                    <label for="ateData">Até:</label>
+                    <input id="ateData" type="date">
+                </p>
+            </section>
+
+            <menu>
+                <button id="aplica" type="reset">Aplicar</button>
+            </menu>
+        </form>
+    </dialog>
+
+    <main id="main">
+        <div>
+            <p>teste</p>
+        </div>
+    </main>
+
+    <footer id="footer">
+        &copy; Prova do segundo bimestre - Programação Web
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
