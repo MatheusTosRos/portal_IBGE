@@ -15,33 +15,32 @@
         <div id="pesquisa-div">
             <form action="" id="buscar-noticia-termo">
                 <input type="text" id="busca-input" name="busca" placeholder="  Buscar notícia por termo" required>
+                <input type="submit" value="🔍" id="enviar-pesquisa">
             </form>
             <button id="modal-button">
                 <div>
                     <svg width="20" height="20" fill="#f0f0f0" viewBox="0 0 80 90" focusable="false"
                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="m 0,0 30,45 0,30 10,15 0,-45 30,-45 Z"></path>>
+                        <path d="m 0,0 30,45 0,30 10,15 0,-45 30,-45 Z"></path>
                     </svg>
                 </div>
+                <span id="filtrosAtivos"></span>
             </button>
         </div>
     </header>
 
-    <dialog id="dialog">
-        <form method="dialog">
-            <section>
-                <p>
+    <dialog id="dialog-filter">
+        <form method="dialog" id="form-dialog">
+            <section id="sec-tipo">
                     <label for="tipo">Tipo:</label>
                     <select id="tipo">
                         <option></option>
                         <option>Notícia</option>
                         <option>Realise</option>
                     </select>
-                </p>
             </section>
 
-            <section>
-                <p>
+            <section id="sec-qtd">
                     <label for="quantidade">Quantidade:</label>
                     <select id="quantidade">
                         <option></option>
@@ -49,25 +48,20 @@
                         <option>5</option>
                         <option>10</option>
                     </select>
-                </p>
             </section>
 
-            <section>
-                <p>
+            <section id="sec-data-inicio">
                     <label for="deData">De:</label>
                     <input id="deData" type="date">
-                </p>
             </section>
 
-            <section>
-                <p>
+            <section id="sec-data-fim">
                     <label for="ateData">Até:</label>
                     <input id="ateData" type="date">
-                </p>
             </section>
 
             <menu>
-                <button id="aplica" type="reset">Aplicar</button>
+                <button id="aplicar" type="submit">Aplicar</button>
             </menu>
         </form>
     </dialog>
