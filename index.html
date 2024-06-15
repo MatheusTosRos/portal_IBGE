@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal de notícias - IBGE</title>
     <link rel="stylesheet" href="./index.css" />
 </head>
 
@@ -12,9 +12,11 @@
 
     <header id="header">
         <h1>Portal de notícias do IBGE</h1>
-        <div id="pesquisa">
-            <input type="text" placeholder="  Buscar notícia por termo">
-            <button id="filtro">
+        <div id="pesquisa-div">
+            <form action="" id="buscar-noticia-termo">
+                <input type="text" id="busca-input" name="busca" placeholder="  Buscar notícia por termo" required>
+            </form>
+            <button id="modal-button">
                 <div>
                     <svg width="20" height="20" fill="#f0f0f0" viewBox="0 0 80 90" focusable="false"
                         xmlns="http://www.w3.org/2000/svg">
