@@ -34,7 +34,7 @@ body {
     background: none;
 }
 
-#pesquisa-div{ 
+#pesquisa-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,18 +50,18 @@ body {
 }
 
 #modal-button {
-    background-color: #4682b4; 
+    background-color: #4682b4;
     border: none;
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
     margin-left: 700%;
     margin-right: 0;
-  }
+}
 
 #modal-button span#filtrosAtivos {
-    background-color: #ffffff; 
-    color: #2d76b7; 
+    background-color: #ffffff;
+    color: #2d76b7;
     border-radius: 50%;
     padding: 5px 10px;
     font-size: 0.8em;
@@ -75,7 +75,17 @@ body {
 
 }
 
-#dialog-filter{
+#buscar-noticia-termo button {
+    position: absolute;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 7px;
+    left: 70%;
+    cursor: pointer;
+}
+
+#dialog-filter {
     width: 35%;
     height: 30%;
 }
@@ -133,7 +143,7 @@ body {
     transition: background-color 0.3s;
 }
 
-#listaNoticias a:hover, button:hover{
+#listaNoticias a:hover {
     background-color: #005fa3;
 }
 
