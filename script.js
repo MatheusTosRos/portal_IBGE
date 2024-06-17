@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const apiIbg = "https://servicodados.ibge.gov.br/api/v3/noticias";
     const listaNoticias = document.getElementById("listaNoticias");
     const paginacao = document.getElementById("paginacao");
@@ -136,4 +136,3 @@
 
     obterDadosAPI();
 });
-*/
